@@ -62,7 +62,7 @@
 ![mofin_recommend](image/recommend.png)
 ![mofin_recommend2](image/recommend2.png)
 
-- **예적금 상품 조회**
+- **예적금 상품 조회**<br>
   다양한 예적금 상품의 정보를 제공하며, 원하는 은행 또는 기간에 맞는 상품 검색 가능. 가입 시 프로필로 이동할 수 있게 함.
 
 <br>
@@ -87,6 +87,7 @@
 - **챗봇 서비스**<br>
   메인페이지의 챗봇 버튼 또는 페이지 하단 버튼을 눌렀을 때 챗봇 기능 활성화. ChatGPT API 를 활용하여 질문을 묻고 답하는 기능 구현.
   <br>
+
 ![mofin_chat2](image/chat2.png)
 ![mofin_chat1](image/chat.png)
 
@@ -113,7 +114,7 @@
   회원가입시 입력한 정보를 프로필 페이지에서 확인 가능. 회원정보 수정, 비밀번호 변경, 회원 탈퇴 가능. 
   가입한 상품 목록과 가입한 상품의 금리 비교 그래프 출력.
   커뮤니티에서 내가 쓴 글 확인 할 수 있도록 함. 
-  
+
   <br> 
   
 ![mofin_profile](image/profile.png)
