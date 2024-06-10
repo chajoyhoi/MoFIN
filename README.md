@@ -49,69 +49,66 @@
 
 ## 📍 서비스 대표 기능들에 대한 설명
 - **메인 페이지**
-<br>
-
 ![mofin_main](image/mainpage.png)
-
-- **금융 상품 추천**
 <br>
+- **금융 상품 추천**
   사용자의 나이, 자산, 연봉 정보를 바탕으로 비슷한 조건을 가진 다른 사용자들이 가입한 예적금 상품을 분석하여 추천. 유사한 사용자들의 데이터를 비교하여 가장 많이 가입한 5개의 예적금 상품을 추출하고, 해당 상품의 은행명, 상품명, 우대 조건 등을 사용자에게 제공.
   추천 상품이 없을 시에 예적금 상품 페이지 링크로 이동하도록 페이지 구성.
+<br>
 
 ![mofin_recommend](image/recommend.png)
 ![mofin_recommend2](image/recommend2.png)
-  
+
 - **예적금 상품 조회**
+  다양한 예적금 상품의 정보를 제공하며, 원하는 은행 또는 기간에 맞는 상품 검색 가능. 가입 시 프로필로 이동할 수 있게 함.
 <br>
-  다양한 예적금 상품의 정보를 제공하며, 원하는 은행 또는 기간에 맞는 상품 검색 가능. 
 
 ![mofin_fin1](image/fin1.png)
 ![mofin_fin2](image/fin2.png)
 
 - **은행 위치 검색**
- <br>
-  카카오맵 API를 활용하여 사용자가 은행 지점 검색 가능.
+  카카오맵 API를 활용하여 기능 구현. 사용자의 주변 은행 지점 검색 가능.
+<br>
 
 ![mofin_bank](image/bank.png)
 
 - **환율 계산기**
-<br>
   나라별 환율 정보를 제공하고, 사용자가 원하는 금액을 입력하면 해당 금액을 다른 통화로 변환. 환율 정보를 확인 및 환전 시 필요한 금액을 간편하게 계산 가능.
+<br>
 
 ![mofin_ex](image/exchange1.png)
 ![mofin_ex](image/exchange21.png)
 ![mofin_ex](image/exchange3.png)
 
 - **챗봇 서비스**
-  <br>
   메인페이지의 챗봇 버튼 또는 페이지 하단 버튼을 눌렀을 때 챗봇 기능 활성화. ChatGPT API 를 활용하여 질문을 묻고 답하는 기능 구현.
-
+  <br>
 ![mofin_chat2](image/chat2.png)
 ![mofin_chat1](image/chat.png)
 
 - **커뮤니티**
-  <br> 
   게시글 작성, 조회, 수정, 삭제 와 댓글 작성, 조회, 삭제 기능 구현.
   (게시글, 댓글 작성자만 수정, 삭제 가능) 
   커뮤니티 페이지에 게시글 최대 10개 노출. 메인페이지 최신 소식에 최신글 5개 반영. 게시글 좋아요 누르기 가능.
 
+  <br> 
 ![mofin_community](image/community.png)
 ![mofin_article3](image/article3.png)
 ![mofin_article](image/article.png)
 ![mofin_article2](image/article2.png)
 
 - **로그인/회원가입**
-  <br> 
   로그인 및 회원가입 기능 구현. 회원가입 시 비밀번호가 일치하지 않거나 정보를 모두 입력하지 않을 시 회원가입이 되지 않고 경고문구 띄움.
 
+  <br> 
 ![mofin_signup](image/signup.png)
 ![mofin_login](image/login.png)
 
 - **프로필 페이지**
-  <br> 
   회원가입시 입력한 정보를 프로필 페이지에서 확인 가능. 회원정보 수정, 비밀번호 변경, 회원 탈퇴 가능. 
   가입한 상품 목록과 가입한 상품의 금리 비교 그래프 출력.
   커뮤니티에서 내가 쓴 글 확인 할 수 있도록 함. 
+  <br> 
   
 ![mofin_profile](image/profile.png)
 ![mofin_update](image/update.png)
