@@ -72,7 +72,7 @@ const signUp = function () {
 };
 
 const navigateToSignIn = () => {
-  router.push({ name: 'login' }); // 'login' 라우트로 이동
+  router.push({ name: 'login' }); 
 };
 </script>
 
@@ -138,7 +138,7 @@ h4 {
 
 .button.primary {
   color: white;
-  background: #FFC107; /* 연한 노란색 */
+  background: #FFC107; 
 }
 
 .button.primary:hover {
@@ -147,17 +147,17 @@ h4 {
 
 .button.secondary {
   background: white;
-  color: #FFC107; /* 연한 노란색 */
+  color: #FFC107; 
 }
 
 .button.secondary:hover {
-  background: #FFF8E1; /* 더 연한 노란색 */
+  background: #FFF8E1; 
 }
 
 p.alert {
   font-size: 14px;
-  color: #D32F2F; /* 에러 메시지 색상 */
-  background-color: #FFCDD2; /* 에러 메시지 배경색 */
+  color: #D32F2F; 
+  background-color: #FFCDD2; 
   padding: 10px;
   border-radius: 5px;
   margin-top: 20px;

@@ -62,7 +62,7 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      exchange_vals: [], // 데이터를 저장할 배열을 data 속성으로 추가
+      exchange_vals: [], 
       loading: false,
       amount: 0,
       temp_from_currency: '',
@@ -74,12 +74,12 @@ export default {
   },
   mounted() {
     this.loading = true;
-    // Django API에 GET 요청 보내기
+    // GET 요청 보내기
     axios.get('http://127.0.0.1:8000/exchange/get_exchange_rates/')
       .then(res => {
         this.exchange_vals = res.data; // 데이터를 data 속성에 할당
         this.loading = false;
-        console.log(this.exchange_vals); // 데이터가 잘 받아와졌는지 확인
+        console.log(this.exchange_vals); 
       })
       .catch(error => {
         console.error('에러 발생:', error);
@@ -128,7 +128,7 @@ export default {
       let fromRate = parseFloat(fromExchange.DEAL_BAS_R.replace(/,/g, ''));
       let toRate = parseFloat(toExchange.DEAL_BAS_R.replace(/,/g, ''));
 
-      // JPY와 IDR의 환율은 100 단위로 제공되므로, 이를 반영합니다.
+      // JPY와 IDR의 환율은 100 단위로 제공
       if (this.from_currency === 'JPY(100)' || this.from_currency === 'IDR(100)') {
         fromRate /= 100;
       }
@@ -136,7 +136,7 @@ export default {
         toRate /= 100;
       }
 
-      // 기준 통화를 원화로 변환한 다음, 대상 통화로 변환합니다.
+      // 기준 통화를 원화로 변환한 다음, 대상 통화로 변환
       const amountInKRW = this.amount * fromRate;
       const convertedAmount = amountInKRW / toRate;
 

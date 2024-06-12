@@ -34,15 +34,15 @@ const logIn = function () {
   };
   
   store.logIn(payload).then(response => {
-    errorMessage.value = null; // 성공 시 에러 메시지 초기화
-    // 다른 성공 처리 로직 추가 가능
+    errorMessage.value = null; 
+    
   }).catch(error => {
-    errorMessage.value = error.response.data.detail || "An error occurred"; // 실패 시 에러 메시지 설정
+    errorMessage.value = error.response.data.detail || "An error occurred";
   });
 };
 
 const navigateToSignUp = () => {
-  router.push({ name: 'signup' }); // 'signup' 라우트로 이동
+  router.push({ name: 'signup' }); 
 };
 </script>
 
@@ -109,7 +109,7 @@ h4 {
 
 .button.primary {
   color: white;
-  background: #ffd13b; /* 연한 노란색 */
+  background: #ffd13b; 
 }
 
 .button.primary:hover {
@@ -118,17 +118,17 @@ h4 {
 
 .button.secondary {
   background: white;
-  color: #FFC107; /* 연한 노란색 */
+  color: #FFC107;
 }
 
 .button.secondary:hover {
-  background: #FFF8E1; /* 더 연한 노란색 */
+  background: #FFF8E1; 
 }
 
 p.alert {
   font-size: 14px;
-  color: #D32F2F; /* 에러 메시지 색상 */
-  background-color: #FFCDD2; /* 에러 메시지 배경색 */
+  color: #D32F2F; 
+  background-color: #FFCDD2; 
   padding: 10px;
   border-radius: 5px;
   margin-top: 20px;

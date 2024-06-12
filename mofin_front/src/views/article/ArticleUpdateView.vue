@@ -31,7 +31,6 @@ const title = ref('')
 const content = ref('')
 
 onMounted(() => {
-  // 기존 게시글의 내용을 가져와서 폼에 채워줍니다.
   axios({
     method: 'get',
     url: `http://127.0.0.1:8000/articles/${articleId}`,

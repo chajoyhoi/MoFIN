@@ -14,8 +14,6 @@ class UserSerializer(serializers.ModelSerializer):
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        # fields = ('id', 'username', 'name', 'email', 'profile_img',)
-        # read_only_fields = ('id', 'username', 'name',)
         exclude = ('password', 'is_superuser', 'is_staff',)
 
 class UserInfoserializer(serializers.ModelSerializer):
@@ -27,10 +25,8 @@ class UserInfoserializer(serializers.ModelSerializer):
 
 class CustomRegisterSerializer(RegisterSerializer):
     # 필요한 필드들을 추가합니다.
-    # username = serializers.CharField(required=False,allow_blank=True,max_length=20)
     name = serializers.CharField(required=False,allow_blank=True,max_length=20)
     nickname = serializers.CharField(max_length=10)
-    # email = serializers.EmailField(required=False,max_length=30)
     age = serializers.IntegerField()
     salary = serializers.IntegerField()
     money = serializers.IntegerField()
@@ -48,7 +44,7 @@ class CustomRegisterSerializer(RegisterSerializer):
             'age': self.validated_data.get('age', ''),
             'salary': self.validated_data.get('salary', ''),
             'money': self.validated_data.get('money', ''),
-            # 'financial_products': self.validated_data.get('financial_products', ''),
+            
         }
     
     def save(self, request):
@@ -63,10 +59,7 @@ class CustomRegisterSerializer(RegisterSerializer):
 class CustomUserDetailsSerializer(UserDetailsSerializer):
     class Meta:
         extra_fields = []
-        # see https://github.com/iMerica/dj-rest-auth/issues/181
-        # UserModel.XYZ causing attribute error while importing other
-        # classes from `serializers.py`. So, we need to check whether the auth model has
-        # the attribute or not
+
         if hasattr(UserModel, 'USERNAME_FIELD'):
             extra_fields.append(UserModel.USERNAME_FIELD)
         if hasattr(UserModel, 'email'):
@@ -85,8 +78,6 @@ class CustomUserDetailsSerializer(UserDetailsSerializer):
             extra_fields.append('salary')    
         if hasattr(UserModel, 'money'):
             extra_fields.append('money') 
-        # if hasattr(UserModel, 'financial_products'):
-        #     extra_fields.append('financial_products') 
         model = UserModel
         fields = ('pk', *extra_fields)
         read_only_fields = ('email',)

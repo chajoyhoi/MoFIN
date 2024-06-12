@@ -81,7 +81,7 @@ const getProductLink = (productCode) => {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center; /* 가운데 정렬 */
+  justify-content: center; 
 }
 .col-md-4 {
   flex: 1 0 30%; 

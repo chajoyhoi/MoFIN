@@ -203,25 +203,6 @@ export const useAccountsStore = defineStore('accounts', () => {
     }
   }
 
-  // const deleteAccount = function () {
-  //   axios({
-  //     method: "delete",
-  //     url: `${API_URL}/accounts/delete_account/`,
-  //     headers: {
-  //       Authorization: `Token ${token.value}`,
-  //     },
-  //   })
-  //     .then(() => {
-  //       // token.value = null;
-  //       alert("회원 탈퇴가 완료되었습니다.");
-  //       router.push({ name: 'home' });
-  //     })
-  //     .catch(err => {
-  //       console.log('회원 탈퇴 중 오류 발생', err);
-  //       alert("회원 탈퇴 중 오류가 발생했습니다.");
-  //     });
-  // };
-
 
   return { logIn, signUp, token, isLogin, logOut, userdata, getUserdata, updateProfile, changePassword, deleteAccount }
 }, { persist: true })

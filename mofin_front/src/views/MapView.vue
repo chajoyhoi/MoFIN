@@ -82,21 +82,18 @@ const search = () => {
 
   searchword.value = `${mainRegion.value || ''} ${subRegion.value || ''} ${selectedBank.value || ''}`.trim();
 
-  // Kakao 지도 API 스크립트 로드
+  
   if (window.kakao && window.kakao.maps) {
-    // 이미 kakao 객체가 정의되어 있을 경우 initMap 호출
     initMap(searchword.value, true);
   } else {
-    // kakao 객체가 정의되어 있지 않으면 스크립트 로드
     const script = document.createElement('script');
-    script.onload = () => initMap(searchword.value, true); // 로드 후 initMap 호출
+    script.onload = () => initMap(searchword.value, true); 
     script.src = `https://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${API_KEY}&libraries=services`;
     document.head.appendChild(script);
   }
 };
 
 const initMap = (keyword = '은행', isSearch = false) => {
-  // kakao 객체가 정의되어 있는지 확인
   if (typeof kakao === 'undefined' || !kakao.maps) {
     console.error('Kakao 지도 API가 로드되지 않았습니다.');
     return;
@@ -106,8 +103,8 @@ const initMap = (keyword = '은행', isSearch = false) => {
     var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 });
     var mapContainer = document.getElementById('map'),
       mapOption = {
-        center: new kakao.maps.LatLng(36.2683, 127.6358), // 대한민국 중심 좌표
-        level: isSearch ? 5 : 14, // 검색 시 확대 레벨, 기본 지도는 전국 레벨
+        center: new kakao.maps.LatLng(36.2683, 127.6358), 
+        level: isSearch ? 5 : 14, 
       };
 
     map = new kakao.maps.Map(mapContainer, mapOption);
@@ -143,18 +140,17 @@ const initMap = (keyword = '은행', isSearch = false) => {
   });
 };
 
-// 페이지가 로드될 때 기본 지도로 초기화
+
 onMounted(() => {
-  // Kakao 지도 API 스크립트 로드
   const script = document.createElement('script');
-  script.onload = () => initMap(); // 로드 후 initMap 호출
+  script.onload = () => initMap(); 
   script.src = `https://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${API_KEY}&libraries=services`;
   document.head.appendChild(script);
 });
 </script>
 
 <style scoped>
-/* 스타일링 추가 */
+
 .fixed-size {
   width: 200px;
 }

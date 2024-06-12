@@ -85,7 +85,7 @@ async function fetchAIResponse(prompt) {
   try {
     const response = await fetch(apiEndpoint, requestOptions);
     const data = await response.json();
-    console.log(data); // 응답을 콘솔에 출력하여 구조 확인
+    console.log(data);
 
     if (data.choices && data.choices.length > 0) {
       const aiResponse = data.choices[0].message.content;

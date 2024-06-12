@@ -74,14 +74,14 @@ import { RouterView, RouterLink } from 'vue-router';
 }
 
 .card {
-  border: none; /* 테두리 선 제거 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 설정 */
+  border: none; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* 추가적인 스타일 */
+
 .card-body {
-  padding: 20px; /* 내부 여백 추가 */
-  border-radius: 10px; /* 카드의 모서리를 둥글게 만듦 */
-  background-color: rgba(255, 255, 255, 0.8); /* 카드 내부 배경색 */
+  padding: 20px; 
+  border-radius: 10px; 
+  background-color: rgba(255, 255, 255, 0.8); 
 }
 </style>

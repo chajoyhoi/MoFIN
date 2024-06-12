@@ -6,7 +6,3 @@ urlpatterns = [
     path('get_exchange_rates/', views.get_exchange_rates)
 ]
 
-# urlpatterns = [
-#     path('api_test/', views.api_test),
-#     path('save_rate/', views.save_rate)
-# ]

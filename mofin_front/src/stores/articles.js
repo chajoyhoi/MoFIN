@@ -10,14 +10,6 @@ export const useArticlesStore = defineStore('articles', () => {
   const articles = ref([])
   const token = computed(() => accountsstore.token)
 
-  // const token = ref(accountsstore.token)
-  // const isLogin = computed(() => {
-  //   if (token.value === null) {
-  //     return false
-  //   } else {
-  //     return true
-  //   }
-  // })
 
   const getArticles = function () {
     axios({

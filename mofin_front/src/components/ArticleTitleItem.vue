@@ -34,11 +34,11 @@ h3 {
 
 .article-content {
   display: flex;
-  justify-content: space-between; /* 요소들을 좌우 정렬 */
+  justify-content: space-between; 
   border-bottom: 1px solid #dbdbdb;
 }
 
 .username {
-  margin-left: auto; /* 텍스트를 오른쪽으로 정렬 */
+  margin-left: auto; 
 }
 </style>

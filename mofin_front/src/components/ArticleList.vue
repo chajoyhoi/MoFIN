@@ -65,7 +65,6 @@ const prevPage = () => {
 };
 
 const getArticleIndex = (index) => {
-  // 전체 글 수에서 현재 페이지에 표시되는 글 수를 뺀 후, 해당 위치부터 역순으로 번호를 부여합니다.
   return store.articles.length - ((props.currentPage - 1) * itemsPerPage) - index;
 };
 
@@ -83,7 +82,4 @@ watch(() => props.currentPage, () => {
   margin-top: 20px;
 }
 
-/* .ma-bt {
-  margin-bottom:500px;
-} */
 </style>

@@ -26,9 +26,9 @@ const store = useArticlesStore();
 // 상위 5개의 최신 글을 가져오기 위해 computed 속성 사용
 const topArticles = computed(() => {
   return store.articles
-    .slice() // 원본 배열을 복사합니다.
-    .sort((a, b) => b.id - a.id) // ID를 기준으로 내림차순 정렬합니다.
-    .slice(0, 5); // 상위 5개의 항목을 선택합니다.
+    .slice() 
+    .sort((a, b) => b.id - a.id) 
+    .slice(0, 5); 
 });
 
 // onMounted(() => {
