@@ -1,26 +1,30 @@
 # MoFIN 💴
 - 금융 데이터를 활용한 예적금 금융 상품 비교 애플리케이션
 
+<br/>   
 
 ## 📍 프로젝트 기간
 - 2024.05.16(목) ~ 2024.05.24(금)
 
+<br/>
 
 ## 🏆프로젝트 성과
 - 삼성 청년 SW 아카데미 관통프로젝트 우수상
+  
+<br/>   
 
 ## 🖥️ 개발 환경
 
 ### 🐳 Backend
 <div> 
-	<img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
+    <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
 </div>
 <br/>
 
 ### 🦊 Frontend
 <div>
-	<img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white">
+    <img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white">
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
@@ -30,21 +34,21 @@
 
 ### 🗂️ DB
 <div>
-	<img src="https://img.shields.io/badge/sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white">
+    <img src="https://img.shields.io/badge/sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white">
 </div>
 <br/>
 
 
 ### 🔨 Tools 
 <div>
-	<img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=Visual-Studio-Code&logoColor=white">
+    <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=Visual-Studio-Code&logoColor=white">
  <img src="https://img.shields.io/badge/gitlab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white">
 <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
 <img src="https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
 
 
 </div>
-<br/>
+<br/>   
 
 
 ## 🎯 설계 내용 및 실제 구현 정도
@@ -59,13 +63,20 @@
 | 7  | 프로필 페이지      | 회원정보 조회 및 수정, 탈퇴 / 금리 비교 그래프  | ⭐⭐⭐⭐⭐    |
 | 8  | 금융 상품 추천 알고리즘 | 사용자 데이터를 이용한 예적금 상품 추천          | ⭐⭐⭐⭐⭐    |
 
+<br/>   
 
 ## 🎞 데이터베이스 모델링 (ERD)
 ![mofin_erd](image/mofin_erd.png)
 
+<br/>   
+
+
 ## 💵 금융 상품 추천 알고리즘 및 기술적 설명
 사용자와 나이, 자산, 연봉이 비슷한 유저들의 데이터를 비교하여 가장 많이 가입한 상품 5개의 코드를 추출하도록 구현.
 추출한 상품 코드는 저장해둔 전체 예,적금 상품 코드와 비교하여 은행명, 상품명, 우대 조건이 보이도록 함.
+
+<br/>   
+
 
 ## 🎨 서비스 대표 기능들에 대한 설명
 - **메인 페이지**
